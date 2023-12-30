@@ -26,3 +26,10 @@ Route::get('/pizzas' , function (){
     ];
     return view('pizzas', ['pizzas' => $pizzas]);
 });
+
+
+// get single record from database
+
+Route::get('/pizzas/{id}' , function ($id){
+    return view('detail' , ['id' => $id]);
+} );
