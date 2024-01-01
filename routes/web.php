@@ -20,5 +20,7 @@ Route::get('/', function () {
 
 Route::get('/pizzas' , [App\Http\Controllers\PizzaController::class,'index']);
 Route::get('/pizzas/create' , [App\Http\Controllers\PizzaController::class, 'create']);
+Route::post('/pizzas' , [App\Http\Controllers\PizzaController::class , 'store']);
 Route::get('/pizzas/{id}' , [App\Http\Controllers\PizzaController::class,'show'] );
+Route::delete('/pizzas/{id}' , [App\Http\Controllers\PizzaController::class , 'destroy']);
 
