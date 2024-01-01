@@ -9,7 +9,7 @@
                 
                 @foreach ($pizzas as $pizza)
                     <div>
-                        {{ $pizza['type'] }}
+                        {{$pizza -> name}} - {{$pizza -> type}} - {{$pizza -> base}} 
                     </div>
                 @endforeach
                 
