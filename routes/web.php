@@ -19,8 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/pizzas' , [App\Http\Controllers\PizzaController::class,'index']);
-
-
-// get single record from database
-
+Route::get('/pizzas/create' , [App\Http\Controllers\PizzaController::class, 'create']);
 Route::get('/pizzas/{id}' , [App\Http\Controllers\PizzaController::class,'show'] );
+
