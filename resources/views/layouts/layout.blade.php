@@ -11,6 +11,7 @@
 
         <!-- Styles -->
         <link href="/styles/main.css" rel="stylesheet"/>
+        @vite(['resources/sass/main.scss'])
     </head>
     <body>
             @yield('content')
